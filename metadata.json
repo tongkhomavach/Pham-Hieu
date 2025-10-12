@@ -1,0 +1,5 @@
+{
+  "name": "Chatbot cho TKMV.COM.VN",
+  "description": "Một chatbot chuyên viên tư vấn khách hàng, sử dụng dữ liệu từ website tongkhomavach.com.vn và tongkhomavach.com để tư vấn và giới thiệu sản phẩm mã vạch phù hợp.",
+  "requestFramePermissions": []
+}
