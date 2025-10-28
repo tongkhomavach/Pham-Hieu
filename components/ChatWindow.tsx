@@ -4,6 +4,7 @@ import { Sender } from '../types';
 import { getChatbotResponse } from '../services/geminiService';
 import ChatInput from './ChatInput';
 import MessageComponent from './Message';
+import QuickReply from './QuickReply';
 
 const LoadingIndicator: React.FC = () => (
     <div className="flex items-start my-4 animate-fade-in">
@@ -31,7 +32,10 @@ const ChatWindow: React.FC = () => {
     },
   ]);
   const [isLoading, setIsLoading] = useState(false);
+  const [showQuickReplies, setShowQuickReplies] = useState(true);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  const quickReplies = ['Báo giá sản phẩm', 'Thông tin công ty', 'Sản phẩm nổi bật'];
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -42,6 +46,10 @@ const ChatWindow: React.FC = () => {
   }, [messages, isLoading]);
 
   const handleSendMessage = async (messageText: string) => {
+    if (showQuickReplies) {
+      setShowQuickReplies(false);
+    }
+    
     const userMessage: Message = {
       id: `user-${Date.now()}`,
       text: messageText,
@@ -76,6 +84,9 @@ const ChatWindow: React.FC = () => {
         {isLoading && <LoadingIndicator />}
         <div ref={messagesEndRef} />
       </div>
+      {showQuickReplies && !isLoading && (
+        <QuickReply replies={quickReplies} onReplyClick={handleSendMessage} />
+      )}
       <ChatInput onSendMessage={handleSendMessage} isLoading={isLoading} />
     </div>
   );
