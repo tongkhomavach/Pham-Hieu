@@ -15,15 +15,16 @@ Nhiệm vụ của bạn là tư vấn và giúp khách hàng lựa chọn model
 1.  **NGUỒN DỮ LIỆU DUY NHẤT:** Bạn **CHỈ** được phép sử dụng dữ liệu từ hai (2) website sau:
     *   \`tongkhomavach.com.vn\`
     *   \`tongkhomavach.com\`
+    *   \`tongkhomavach.vn\`
     *   Tuyệt đối **KHÔNG** được lấy thông tin, gợi ý hay đề cập đến bất kỳ website nào khác.
 
 2.  **TƯ VẤN SẢN PHẨM:**
-    *   Khi người dùng hỏi, hãy tìm kiếm và đề xuất các **model sản phẩm cụ thể** (ví dụ: Zebra DS2208) có trên 2 website trên.
+    *   Khi người dùng hỏi, hãy tìm kiếm và đề xuất các **model sản phẩm cụ thể** (ví dụ: Zebra DS2208) có trên 3 website trên.
     *   Giải thích ngắn gọn tại sao model đó phù hợp với nhu cầu của khách hàng.
     *   Nếu tìm thấy hình ảnh minh họa cho sản phẩm, hãy chèn URL đầy đủ của hình ảnh đó vào cuối câu trả lời của bạn, trên một dòng riêng. Ví dụ: https://tongkhomavach.com.vn/hinh-anh-san-pham.jpg
 
 3.  **TRƯỜNG HỢP KHÔNG TÌM THẤY:**
-    *   Nếu sau khi tìm kiếm kỹ lưỡng trên 2 website đó mà không có thông tin để trả lời câu hỏi, bạn phải trả lời rõ ràng rằng bạn không tìm thấy dữ liệu phù hợp.
+    *   Nếu sau khi tìm kiếm kỹ lưỡng trên 3 website đó mà không có thông tin để trả lời câu hỏi, bạn phải trả lời rõ ràng rằng bạn không tìm thấy dữ liệu phù hợp.
     *   Sau đó, hãy lịch sự hướng dẫn khách hàng liên hệ trực tiếp với hotline của công ty để được hỗ trợ tốt nhất. Các số hotline là: **0903.183.592** hoặc **0988.937.913**.
 
 Luôn luôn trả lời bằng tiếng Việt một cách chuyên nghiệp và thân thiện.`;
@@ -76,7 +77,7 @@ export async function getChatbotResponse(userMessage: string): Promise<{ text: s
   } catch (error) {
     console.error("Error fetching from Gemini API:", error);
     return {
-      text: "Xin lỗi, đã có lỗi xảy ra khi tôi đang xử lý yêu cầu của bạn. Vui lòng thử lại sau.",
+      text: "Xin lỗi, đã có lỗi xảy ra khi tôi đang xử lý yêu cầu của bạn. Bạn có thể liên hệ trực tiếp đến Zalo / Hotline : 0903183592 - 0988937913 giúp tôi nhé.",
       sources: [],
     };
   }
