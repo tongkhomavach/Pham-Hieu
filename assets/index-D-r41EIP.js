@@ -326,4 +326,4 @@ Luôn luôn trả lời bằng tiếng Việt một cách chuyên nghiệp và t
           .animate-fade-in {
             animation: fade-in 0.3s ease-out forwards;
           }
-       `}),te.jsx("div",{className:"w-full h-[90vh] max-h-[800px]",children:te.jsx(mM,{})}),te.jsx("footer",{className:"text-center mt-4 text-slate-500 text-sm",children:te.jsx("p",{children:"Powered by Google Gemini API. For demonstration purposes."})})]}),zg=document.getElementById("root");if(!zg)throw new Error("Could not find root element to mount to");const vM=S0.createRoot(zg);vM.render(te.jsx(h0.StrictMode,{children:te.jsx(gM,{})}));
+       `}),te.jsx("div",{className:"w-full h-[90vh] max-h-[800px]",children:te.jsx(mM,{})}),te.jsx("footer",{className:"text-center mt-4 text-slate-500 text-sm",children:te.jsx("p",{children:"Powered by Google. @tongkhomavach."})})]}),zg=document.getElementById("root");if(!zg)throw new Error("Could not find root element to mount to");const vM=S0.createRoot(zg);vM.render(te.jsx(h0.StrictMode,{children:te.jsx(gM,{})}));
