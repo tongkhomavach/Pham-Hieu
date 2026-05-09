@@ -18,7 +18,7 @@ const App: React.FC = () => {
         <ChatWindow />
       </div>
       <footer className="text-center mt-4 text-slate-500 text-sm">
-        <p>Powered by Google Gemini API. For demonstration purposes.</p>
+        <p>Powered by Google. @tongkhomavach.</p>
       </footer>
     </main>
   );
